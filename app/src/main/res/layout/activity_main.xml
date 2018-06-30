@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+   >
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="姓名" />
+
+    <EditText
+        android:id="@+id/et_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="目的地" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="航班" />
+        <Spinner
+            android:id="@+id/hb"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="时间" />
+        <Spinner
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="添加订单" />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp">
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#992800FF"
+        android:text="取消"/>
+</RelativeLayout>
+
+</LinearLayout>
